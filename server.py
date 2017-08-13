@@ -95,7 +95,6 @@ def route_savestory(id):
 
 @server_object.route("/delete-<id>", methods=["GET"])
 def route_deletestory(id):
-    list_of_keys = ["title", "story", "criteria", "businessvalue", "estimation", "status"]
     list_to_modify = list()
     with open("supersprinter.csv", "r") as f:
         for line in f:
