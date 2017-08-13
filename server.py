@@ -20,9 +20,6 @@ def route_list2():
 
 @server_object.route("/story")
 def route_addstory():
-    story_text = ""
-    if "story" in session:
-        story_text = session["story"]
     return render_template(
         "form.html",
         title_of_head="Add new story",
